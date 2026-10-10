@@ -1,4 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Permite usar el sensor biométrico (huella, rostro, iris).
+         Es un permiso normal: Android lo concede al instalar y no muestra diálogo. -->
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+
     <application
         android:label="aplicacion_biometria"
         android:name="${applicationName}"
