@@ -114,14 +114,5 @@ flutter run     # en un Android con huella registrada
 - Activar el *Modo de desarrollador* de Windows para compilar plugins.
 - Registrar una huella en el emulador / teléfono para poder probar.
 
-## 8. Repositorio y créditos
-
-🔗 **Repositorio:** [https://github.com/USUARIO/REPOSITORIO](https://github.com/USUARIO/REPOSITORIO)
-
-| Integrante | Correo | Sección del video |
-|---|---|---|
-| Tay [Apellido] | [correo] | [sección] |
-| Brayan [Apellido] | [correo] | [sección] |
-
 **Curso:** Programación Móvil (SS603) · Universidad Popular del Cesar
 **Paquetes:** [`local_auth`](https://pub.dev/packages/local_auth)
