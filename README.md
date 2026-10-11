@@ -94,6 +94,16 @@ flutter test    # 12 pruebas unitarias
 flutter run     # en un Android con huella registrada
 ```
 
+## Principios SOLID aplicados
+
+| Principio | Dónde se ve en el proyecto |
+|---|---|
+| **S** – Responsabilidad única | `AuthErrorMapper` solo traduce errores; `BiometricService` aplica las reglas; `BiometricController` guarda el estado; cada widget solo dibuja. |
+| **O** – Abierto/Cerrado | Para cambiar `local_auth` por otro paquete basta con crear otra implementación de `BiometricPlatform`; nada más cambia. |
+| **L** – Sustitución de Liskov | `FakeBiometricPlatform` (pruebas) y `LocalAuthPlatform` son intercambiables. |
+| **I** – Segregación de interfaces | `BiometricPlatform` expone solo las operaciones que la app usa. |
+| **D** – Inversión de dependencias | `BiometricService` depende de la interfaz `BiometricPlatform`; la implementación real se inyecta en `main.dart`. |
+
 ## 5. Conclusiones
 
 - La biometría mejora la **seguridad** y la **experiencia de usuario** a la vez.
